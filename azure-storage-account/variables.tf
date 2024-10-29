@@ -16,8 +16,20 @@ variable "location" {
     default = "LRS"     
   }
 
-  variable "tags" {
-    description = "Tags padrão qu são aplicadas nos recursos"
+  variable "resource_group_name" {
+    description = "Nome do Resource Group no Azure"
     type = string
-    default = "Terraform"
+    default = "rg-curso-terraform"
+  }
+
+  variable "storage_account_name" {
+    description = "Nome da Storage Account na Azure"
+    type = string
+    default = "joaomgbterraform"
+  }
+
+  variable "container_name" {
+    description = "Nome do Container na Azure"
+    type = string
+    default = "container-terraform"
   }
